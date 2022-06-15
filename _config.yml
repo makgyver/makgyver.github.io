@@ -203,10 +203,10 @@ jekyll-archives:
 
 scholar:
 
-  last_name: Einstein
-  first_name: [Albert, A.]
+  last_name: Polato
+  first_name: [Mirko, M.]
 
-  style: apa
+  style: bib
   locale: en
 
   source: /_bibliography/
