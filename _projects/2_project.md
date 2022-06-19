@@ -1,80 +1,66 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: assets/img/3.jpg
+title: gossipy
+description: python module for simulating gossip learning and decentralized federated learning.
+img: #
 importance: 2
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+# gossipy 
+Python module for simulating gossip learning and decentralized federated learning.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## Install
+**gossipy** is available as a [PyPI](https://pypi.org) module and it can be installed using `pip`:
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+```console
+$ pip install gossipy-dfl
 ```
-{% endraw %}
+
+## TODOs
+
+### Features
+
+- [ ] Models cache[[Ormandi 2013]](#1) [[Giaretta 2019]](#4) (partially implemented)
+- [ ] Perfect matching [[Ormandi 2013]](#1)
+- [ ] More realistic online behaviour (currently it is a worst case scenario)
+- [ ] DFL [[Liu 2022]](#10)
+- [ ] Segmented GL [[Hu 2019]](#5)
+- [ ] CMFL [[Che 2021]](#9)
+- [ ] Add training stopping criterion
+- [ ] GPU support (quick fix)
+
+### Extras
+
+- [ ] Add 'Weights and Biases' support
+
+
+## References
+<a id="1">[Ormandi 2013]</a>
+Ormándi, Róbert, István Hegedüs, and Márk Jelasity. 'Gossip Learning with Linear Models on Fully Distributed Data'. Concurrency and Computation: Practice and Experience 25, no. 4 (February 2013): 556–571. https://doi.org/10.1002/cpe.2858.
+
+<a id="2">[Berta 2014]</a>
+Arpad Berta, Istvan Hegedus, and Robert Ormandi. 'Lightning Fast Asynchronous Distributed K-Means Clustering', 22th European Symposium on Artificial Neural Networks, (ESANN) 2014, Bruges, Belgium, April 23-25, 2014.
+
+<a id="3">[Danner 2018]</a>
+G. Danner and M. Jelasity, 'Token Account Algorithms: The Best of the Proactive and Reactive Worlds'. In 2018 IEEE 38th International Conference on Distributed Computing Systems (ICDCS), 2018, pp. 885-895. https://doi.org/10.1109/ICDCS.2018.00090.
+
+<a id="4">[Giaretta 2019]</a>
+Giaretta, Lodovico, and Sarunas Girdzijauskas. 'Gossip Learning: Off the Beaten Path'. In 2019 IEEE International Conference on Big Data (Big Data), 1117–1124. Los Angeles, CA, USA: IEEE, 2019. https://doi.org/10.1109/BigData47090.2019.9006216.
+
+<a id="5">[Hu 2019]</a> Chenghao Hu, Jingyan Jiang and Zhi Wang. 'Decentralized Federated Learning: A Segmented Gossip Approach'. https://arxiv.org/pdf/1908.07782.pdf
+
+<a id="6">[Hegedus 2020]</a>
+Hegedűs, István, Gábor Danner, Peggy Cellier and Márk Jelasity. 'Decentralized Recommendation Based on Matrix Factorization: A Comparison of Gossip and Federated Learning'. In 2020 Joint European Conference on Machine Learning and Knowledge Discovery in Databases, 2020, pp. 317-332. https://doi.org/10.1007/978-3-030-43823-4_27.
+
+<a id="7">[Hegedus 2021]</a>
+Hegedűs, István, Gábor Danner, and Márk Jelasity. 'Decentralized Learning Works: An Empirical Comparison of Gossip Learning and Federated Learning'. Journal of Parallel and Distributed Computing 148 (February 2021): 109–124. https://doi.org/10.1016/j.jpdc.2020.10.006.
+
+<a id="8">[Onoszko 2021]</a>
+Noa Onoszko, Gustav Karlsson Olof Mogren, and Edvin Listo Zec. 'Decentralized federated learning of deep neural networks on non-iid data'. International Workshop on Federated Learning for User Privacy and Data Confidentiality in Conjunction with ICML 2021 (FL-ICML'21). https://fl-icml.github.io/2021/papers/FL-ICML21_paper_3.pdf
+
+<a id="9">[Che 2021]</a>
+Chunjiang Che, Xiaoli Li, Chuan Chen, Xiaoyu He, and Zibin Zheng. 'A Decentralized Federated Learning Framework via Committee Mechanism with Convergence Guarantee'. https://arxiv.org/pdf/2108.00365.pdf
+
+<a id="10">[Liu 2022]</a>
+Wei Liu, Li Chen and Wenyi Zhang. 'Decentralized Federated Learning: Balancing Communication and Computing Costs'. https://arxiv.org/pdf/2107.12048.pdf

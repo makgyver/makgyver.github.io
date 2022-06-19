@@ -2,7 +2,9 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>University of Turin, Department of Computer Science</a>
+subtitle: >
+  <span><b>Assistant Professor</b></span>
+  <a href='http://www.di.unito.it/do/home.pl'>University of Turin, Department of Computer Science</a>
 
 profile:
   align: right
@@ -10,19 +12,24 @@ profile:
   address: >
     📮 Email address
     <p>[name].[surname]@unito.it</p>
-    🏢 Office address
-    <p>Office A1 (1st Floor)</p>
-    <p>Corso Svizzera 185</p>
-    <p>10149, Torino, Italy</p>
+    <div class="office">
+      🏢 Office address
+      <p>Office A1 (1st Floor)</p>
+      <p>Corso Svizzera 185</p>
+      <p>10149, Torino (TO), Italy</p>
+    </div>
 
 social: true  # includes social icons at the bottom of the page
 news: false  # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
-
+selected_papers: faltruese # includes a list of papers marked as "selected={true}"
+nav_order: 5
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Hi there! My name is Mirko Polato and I am an Assistant Professor in the Department of Computer Science at the University of Turin (Italy).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I received his MSc and Ph.D. in Brain, Mind, and Computer Science from the University of Padova (Italy) in 2013 and 2018, respectively. In 2017, I was a visiting Ph.D. student at the Delft University of Technology in the Multimedia Computing group, under the supervision of Prof. Martha Larson. From 2018 to 2021, I have spent three years as a post-doctoral fellow at the University of Padova.
+
+Currently, I have published 40+ research articles on international conferences and journals. I served as a Program Committee member of several international conferences and as a guest editor and referee for several international journals.
+
+My main research interests include federated learning, interpretable machine learning, cybersecurity, recommender system, and representation learning.
