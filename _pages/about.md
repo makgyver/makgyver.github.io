@@ -31,7 +31,7 @@ nav_order: 5
 
 Hi there! My name is Mirko Polato and I am an Assistant Professor in the Department of Computer Science at the University of Turin (Italy).
 
-I received his MSc and Ph.D. in [Brain, Mind, and Computer Science](http://hit.psy.unipd.it/BMCS-Overview) from the [University of Padova](https://www.unipd.it/) (Italy) in 2013 and 2018, respectively. In 2017, I was a visiting Ph.D. student at the [Delft University of Technology](https://www.tudelft.nl/) in the [Multimedia Computing group](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/intelligent-systems/multimedia-computing/). From 2018 to 2021, I have spent three years as a post-doctoral fellow at the [University of Padova](https://www.unipd.it/).
+I received my MSc and Ph.D. in [Brain, Mind, and Computer Science](http://hit.psy.unipd.it/BMCS-Overview) from the [University of Padova](https://www.unipd.it/) (Italy) in 2013 and 2018, respectively. In 2017, I was a visiting Ph.D. student at the [Delft University of Technology](https://www.tudelft.nl/) in the [Multimedia Computing group](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/intelligent-systems/multimedia-computing/). From 2018 to 2021, I have spent three years as a post-doctoral fellow at the [University of Padova](https://www.unipd.it/).
 
 Currently, I have published 40+ research articles on international conferences and journals. I served as a Program Committee member of several international conferences and as a guest editor and referee for several international journals.
 
