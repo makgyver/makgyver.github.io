@@ -2,7 +2,7 @@
 layout: page
 title: gossipy
 description: python module for simulating gossip learning and decentralized federated learning.
-img: #
+img: assets/img/gossipy.png
 importance: 2
 category: work
 ---

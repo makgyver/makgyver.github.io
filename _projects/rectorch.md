@@ -28,25 +28,94 @@ category: work
 
 The latest PyPi release contains the following methods.
 
-| Name      | Description                                                                            | Ref.      |
-|-----------|----------------------------------------------------------------------------------------|-----------|
-| MultiDAE  | Denoising Autoencoder for Collaborative filtering with Multinomial prior               | [[1]](#1) |
-| MultiVAE  | Variational Autoencoder for Collaborative filtering with Multinomial prior             | [[1]](#1) |
-| CMultiVAE | Conditioned Variational Autoencoder                                                    | [[2]](#2) |
-| CFGAN     | Collaborative Filtering with Generative Adversarial Networks                           | [[3]](#3) |
-| EASE      | Embarrassingly shallow autoencoder for sparse data                                     | [[4]](#4) |
-| ADMM_Slim | ADMM SLIM: Sparse Recommendations for Many Users                                       | [[5]](#5) |
-| SVAE      | Sequential Variational Autoencoders for Collaborative Filtering                        | [[6]](#6) |
-| RecVAE    | RecVAE: A New Variational Autoencoder for Top-N Recommendations with Implicit Feedback | [[7]](#7) |
+<table class="styled-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Ref.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MultiDAE</td>
+<td>Denoising Autoencoder for Collaborative filtering with Multinomial prior</td>
+<td><a href="#1">[1]</a></td>
+</tr>
+<tr>
+<td>MultiVAE</td>
+<td>Variational Autoencoder for Collaborative filtering with Multinomial prior</td>
+<td><a href="#1">[1]</a></td>
+</tr>
+<tr>
+<td>CMultiVAE</td>
+<td>Conditioned Variational Autoencoder</td>
+<td><a href="#2">[2]</a></td>
+</tr>
+<tr>
+<td>CFGAN</td>
+<td>Collaborative Filtering with Generative Adversarial Networks</td>
+<td><a href="#3">[3]</a></td>
+</tr>
+<tr>
+<td>EASE</td>
+<td>Embarrassingly shallow autoencoder for sparse data</td>
+<td><a href="#4">[4]</a></td>
+</tr>
+<tr>
+<td>ADMM_Slim</td>
+<td>ADMM SLIM: Sparse Recommendations for Many Users</td>
+<td><a href="#5">[5]</a></td>
+</tr>
+<tr>
+<td>SVAE</td>
+<td>Sequential Variational Autoencoders for Collaborative Filtering</td>
+<td><a href="#6">[6]</a></td>
+</tr>
+<tr>
+<td>RecVAE</td>
+<td>RecVAE: A New Variational Autoencoder for Top-N Recommendations with Implicit Feedback</td>
+<td><a href="#7">[7]</a></td>
+</tr>
+</tbody>
+</table>
 
 Now **rectorch** also includes some baseline methods.
 
-| Name      | Description                                                                            | Ref.      |
-|-----------|----------------------------------------------------------------------------------------|-----------|
-| Random    | Random recommender                                                                     |           |
-| Popularity| Popularity-based recommender                                                           |           |
-| SLIM      | SLIM: Sparse Linear Methods for Top-N Recommender Systems                              | [[8]](#8) |
-| CF-KOMD   | Boolean kernels for collaborative filtering in top-N item recommendation               | [[9]](#9) |
+<table class="styled-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Ref.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Random</td>
+<td>Random recommender</td>
+<td></td>
+</tr>
+<tr>
+<td>Popularity</td>
+<td>Popularity-based recommender</td>
+<td></td>
+</tr>
+<tr>
+<td>SLIM</td>
+<td>SLIM: Sparse Linear Methods for Top-N Recommender Systems</td>
+<td><a href="#8">[8]</a></td>
+</tr>
+<tr>
+<td>CF-KOMD</td>
+<td>Boolean kernels for collaborative filtering in top-N item recommendation</td>
+<td><a href="#9">[9]</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
 
 ## Getting started
 ### Installation
@@ -67,23 +136,57 @@ pip3 install -r requirements.txt
 ### Architecture
 **rectorch** is composed of 9 main modules summarized in the following.
 
-| Name          | Scope                                                                                        |
-|---------------|----------------------------------------------------------------------------------------------|
-| configuration | Contains useful classes to manage the configuration files.                                   |
-| data          | Manages the reading, writing and loading of the data sets                                    |
-| evaluation    | Contains utility functions to evaluate recommendation engines.                               |
-| metrics       | Contains the definition of the evaluation metrics.                                           |
-| models        | Includes the training algorithm for the implemented recommender systems.                     |
-| nets          | Contains definitions of the neural newtork architectures used by the implemented approaches. |
-| samplers      | Contains definitions of sampler classes useful when training neural network-based models.    |
-| utils         | Contains definitions of some utility functions.                                              |
-| validation    | Contains methods and classes for performing model selection.                                 |
+<table class="styled-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>configuration</td>
+<td>Contains useful classes to manage the configuration files.</td>
+</tr>
+<tr>
+<td>data</td>
+<td>Manages the reading, writing and loading of the data sets</td>
+</tr>
+<tr>
+<td>evaluation</td>
+<td>Contains utility functions to evaluate recommendation engines.</td>
+</tr>
+<tr>
+<td>metrics</td>
+<td>Contains the definition of the evaluation metrics.</td>
+</tr>
+<tr>
+<td>models</td>
+<td>Includes the training algorithm for the implemented recommender systems.</td>
+</tr>
+<tr>
+<td>nets</td>
+<td>Contains definitions of the neural newtork architectures used by the implemented approaches.</td>
+</tr>
+<tr>
+<td>samplers</td>
+<td>Contains definitions of sampler classes useful when training neural network-based models.</td>
+</tr>
+<tr>
+<td>utils</td>
+<td>Contains definitions of some utility functions.</td>
+</tr>
+<tr>
+<td>validation</td>
+<td>Contains methods and classes for performing model selection.</td>
+</tr>
+</tbody>
+</table>
+
 
 ### Tutorials
 
-*(To be released soon)* 
-
-We will soon release a series of python notebooks with examples on how to train and evaluate
+We released a series of python notebooks with examples on how to train and evaluate
 recommendation methods using **rectorch**.
 
 ### Documentation
@@ -96,7 +199,7 @@ Thanks for your patience, it will be fixed soon.
 ### Testing
 The easiest way to test **rectorch** is using [pytest](https://docs.pytest.org/en/latest/).
 
-```
+```shell
 git clone https://github.com/makgyver/rectorch.git
 cd rectorch/tests
 pytest
@@ -104,7 +207,7 @@ pytest
 
 You can also check the coverage using [coverage](https://pypi.org/project/coverage/).
 From the `tests` folder:
-```
+```shell
 coverage run -m pytest  
 coverage report -m
 ```
@@ -116,7 +219,7 @@ version of the framework where each module has been fully tested. However, new u
 or under development features are available in the *dev* branch. The *dev* version of **rectorch**
 can be used by cloning the branch.
 
-```
+```shell
 git clone -b dev https://github.com/makgyver/rectorch.git
 cd rectorch
 pip3 install -r requirements.txt
