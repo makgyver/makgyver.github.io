@@ -117,6 +117,9 @@ collections:
   teaching:
     output: true
     permalink: /teaching/:path/
+  thesis:
+    output: true
+    permalink: /thesis/:path/
 
 news_limit: 5
 

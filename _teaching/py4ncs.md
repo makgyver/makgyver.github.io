@@ -7,4 +7,5 @@ site: http://hit.psy.unipd.it/BMCS
 years: [2020/21, 2021/22]
 last_year: 2022
 category: courses
+moodle: https://psico.elearning.unipd.it/course/view.php?id=3395
 ---
