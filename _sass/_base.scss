@@ -443,7 +443,7 @@ footer.sticky-bottom {
         height: 2rem;
         margin-bottom: 0.5rem;
         abbr {
-          display: inline-block;
+          display: block;
           background-color: var(--global-theme-color);
           padding-left: 1rem;
           padding-right: 1rem;
@@ -457,6 +457,15 @@ footer.sticky-bottom {
         .award {
           color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
+        }
+        .idx {
+          height: 1.1rem;
+          margin-bottom: 0.5rem;
+          display: inline-block;
+          background-color: #777777;
+          padding-left: .5rem;
+          padding-right: .5rem;
+          //padding-bottom: .2rem;
         }
       }
       .title {
