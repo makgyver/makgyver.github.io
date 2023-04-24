@@ -246,7 +246,7 @@ If you are using **rectorch** in your work, please consider citing this reposito
 ```
 @misc{rectorch,
     author = {Mirko Polato},
-    title = {{rectorch: pytorch-based framework for top-N recommendation}},
+    title = {rectorch: pytorch-based framework for top-N recommendation},
     year = {2020},
     month = {sep},
     doi = {10.5281/zenodo.3841898},

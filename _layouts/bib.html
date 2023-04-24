@@ -157,7 +157,7 @@
           {% if entry.bibtex_show -%}
           <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            {% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}
+            {% highlight bibtex %}{{ entry.bibtex | regex_replace: '\s+id = .*,', '' | regex_replace: '\s+bibtex_show = .*,*', '' }}{% endhighlight %}
           </div>
           {%- endif %}
         </div>
