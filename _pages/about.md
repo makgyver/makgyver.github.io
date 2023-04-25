@@ -11,10 +11,10 @@ profile:
   align: right
   image: mak_profile.jpeg
   address: >
-    📮 Email address
+    <i class="fa fa-envelope"></i> Email address
     <p>[name].[surname]@unito.it</p>
     <div class="office">
-      🏢 Office address
+      <i class="fa fa-desktop"></i> Office address
       <p>Office A1 (1st Floor)</p>
       <a href="https://g.page/diunito?share">
       <p>Corso Svizzera 185</p>
