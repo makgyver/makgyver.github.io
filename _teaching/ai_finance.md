@@ -8,4 +8,5 @@ site:
 years: [2020/2021]
 last_year: 2020
 category: lectures
+slides: ../assets/pdf/ML4finance.pdf
 ---

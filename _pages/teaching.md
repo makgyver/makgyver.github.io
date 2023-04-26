@@ -27,17 +27,25 @@ sections: ["courses", "teaching support", "lectures", "seminars"]
                 {%- else -%}
                     <h2>{{teach.title}}</h2>
                 {%- endif -%}
-                {%- if teach.site -%}
-                    <a href="{{teach.site}}">{{ teach.course }}</a>
-                {%- else -%}
-                    {{ teach.course }}
+                {%- if teach.course -%}
+                    {%- if teach.site -%}
+                        <a href="{{teach.site}}">{{ teach.course }}</a>
+                    {%- else -%}
+                        {{ teach.course }}
+                    {%- endif -%}
                 {%- endif -%}
-                <div><span class=""><b>{{ teach.university }}</b></span></div>
+                <div><span class=""><b>{{ teach.university }}</b></span>
+                </div>
                 {%- if teach.moodle -%}
                     <div class="links">
                     <a href="{{ teach.moodle }}" class="bibtex btn btn-sm z-depth-0 waves-effect waves-light" role="button">Moodle page</a>
                     </div>
                 {%- endif -%}
+                {%- if teach.slides %}
+                    <div class="links">
+                    <a href="{{ teach.slides }}" class="bibtex btn btn-sm z-depth-0 waves-effect waves-light" role="button">Slides</a>
+                    </div>
+                {%- endif %}
             </div>
         </div>
         {% endfor %}

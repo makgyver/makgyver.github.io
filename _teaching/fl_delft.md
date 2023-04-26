@@ -8,4 +8,5 @@ site:
 years: [2021/2022]
 last_year: 2022
 category: lectures
+slides: ../assets/pdf/FL_privacy_security.pdf
 ---

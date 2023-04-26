@@ -8,4 +8,5 @@ site:
 years: [2018/19]
 last_year: 2019
 category: seminars
+slides: ../assets/pdf/IML.pdf
 ---

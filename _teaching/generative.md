@@ -8,4 +8,5 @@ site:
 years: [2019/20,2020/21]
 last_year: 2021
 category: seminars
+slides: ../assets/pdf/Generative_models.pdf
 ---

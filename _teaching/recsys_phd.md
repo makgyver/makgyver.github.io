@@ -8,4 +8,5 @@ site: http://hit.psy.unipd.it/tools-and-applications-machine-learning
 years: [2019/20,2020/21,2021/22,2022/23]
 last_year: 2023
 category: lectures
+slides: ../assets/pdf/Recsys.pdf
 ---

@@ -8,4 +8,5 @@ site:
 years: [2020/2021]
 last_year: 2021
 category: lectures
+slides: ../assets/pdf/RL4econometrics.pdf
 ---
