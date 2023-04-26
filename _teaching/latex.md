@@ -8,4 +8,5 @@ site:
 years: [2017]
 last_year: 2017
 category: courses
+slides: ../assets/pdf/latex_course/
 ---
