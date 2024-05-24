@@ -7,9 +7,6 @@ importance: 2
 category: work
 ---
 
-# gossipy 
-Python module for simulating gossip learning and decentralized federated learning.
-
 ## Install
 **gossipy** is available as a [PyPI](https://pypi.org) module and it can be installed using `pip`:
 
