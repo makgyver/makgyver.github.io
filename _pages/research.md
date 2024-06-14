@@ -15,14 +15,16 @@ During my carrier as a researcher, I have been working on several topics related
 - Kernel Methods
 - Process Mining
 
-In the last years, I am focusing my efforts on **Federated Learning** with several recent publications [[C19](/publications/#C19), [C20](/publications/#C20), [C21](/publications/#C21), [C25](/publications/#C25)]. 
+In the last years, I am focusing my efforts on **Federated Learning** with several recent publications [[C19](/publications/#C19), [C20](/publications/#C20), [C21](/publications/#C21), [C25](/publications/#C25), [C28](/publications/#C28)]. 
 
 I am also active in the organization of workshops on this theme:
 - [1st Workshop on Federated Learning Technologies @ TheWebConf 2023](https://flw.di.unito.it)
 - [1st Workshop on Advancement in Federated Learning @ ECML-PKDD 2023](https://2023.ecmlpkdd.org/)
+- [2nd Workshop on Advancement in Federated Learning @ ECML-PKDD 2024](https://wafl2024.di.unito.it/)
 
 as well as special sessions 
 - [Special Session on Federated Learning Methods, Applications, Challenges, and beyond @ IJCNN 2023](https://federated-learning-ijcnn2023.github.io/)
+- [Special Session on Machine learning in distributed, federated and non-stationary environments @ ESANN 2024](https://www.esann.org/special-sessions)
 
 and journal special issue:
 - Federated Learning: Theoretical and Practical Advances - Frontiers in Big Data
