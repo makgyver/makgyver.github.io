@@ -5,4 +5,4 @@ inline: true
 ---
 
 Our paper **FedHP: Federated Learning with Hyperspherical Prototypical Regularization** has been 
-accepted as a poster at [ESANN 2024](https://www.esann.org/).
+accepted for presentation at [ESANN 2024](https://www.esann.org/).
