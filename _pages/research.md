@@ -15,7 +15,7 @@ During my carrier as a researcher, I have been working on several topics related
 - Kernel Methods
 - Process Mining
 
-In the last years, I am focusing my efforts on **Federated Learning** with several recent publications [[C19](/publications/#C19), [C20](/publications/#C20), [C21](/publications/#C21), [C25](/publications/#C25), [C28](/publications/#C28)]. 
+In the last years, I am focusing my efforts on **Federated Learning** with several recent publications [[C19](/publications/#C19), [C20](/publications/#C20), [C21](/publications/#C21), [C25](/publications/#C25), [C28](/publications/#C28), [J15](/publications/#J15)]. 
 
 I am also active in the organization of workshops on this theme:
 - [1st Workshop on Federated Learning Technologies @ TheWebConf 2023](https://flw.di.unito.it)
