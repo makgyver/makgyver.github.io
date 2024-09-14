@@ -65,6 +65,8 @@ Tutorials on how to use ``fluke`` can be found [here](https://makgyver.github.io
 - Add your dataset and use it with ``fluke`` [![Open in Colab](https://img.shields.io/badge/Open_in_Colab-blue?style=flat-square&logo=google-colab&logoColor=yellow&labelColor=gray)
 ](https://colab.research.google.com/github/makgyver/fluke/blob/main/tutorials/fluke_custom_dataset.ipynb)
 
+`fluke` has been presented at the WAFL workshop hosted in ECML PKDD 2024. These are the [slides](../assets/pdf/fluke_ecmlpkk2024.pdf).
+
 ## Contributing
 
 If you have suggestions for how ``fluke`` could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
