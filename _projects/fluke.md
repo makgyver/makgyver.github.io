@@ -10,7 +10,8 @@ category: work
 <a href="https://makgyver.github.io/fluke"><img src="https://img.shields.io/github/actions/workflow/status/makgyver/fluke/doc-publish.yml?style=for-the-badge&label=DOCUMENTATION"/></a>
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/fluke-fl?style=for-the-badge&logo=python&logoColor=yellow)
 ![GitHub License](https://img.shields.io/github/license/makgyver/fluke?style=for-the-badge)
-
+[![arXiv](https://img.shields.io/badge/arxiv-2412.15728-b31b1b.svg?style=for-the-badge&logo=arxiv&logoColor=red)](https://arxiv.org/abs/2412.15728)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
 # **fluke**: **f**ederated **l**earning **u**tility framewor**k** for **e**xperimentation and research
 
@@ -18,11 +19,42 @@ category: work
 
 ## Installation
 
+### Pypi
+
 ``fluke`` is a Python package that can be installed via pip. To install it, you can run the following command:
 
-```console
+```bash
 pip install fluke-fl
 ```
+
+### Clone the repository
+
+You can also install ``fluke`` by cloning the repository and installing it in editable mode. This is useful if you want to contribute to the development of ``fluke`` or if you want to use the latest version of the code.
+
+```bash
+git clone https://github.com/makgyver/fluke.git
+cd fluke
+pip install -e .
+```
+
+> [!WARNING]
+> Due to a recent repository tree refactoring, if you cloned the repository before June 2025, you need to reclone it to get the latest version of the code.
+
+### 🐳 Docker
+
+You can use this library directly inside a Docker container — no installation needed on your local machine.
+
+```bash
+docker build -t fluke_container .
+```
+
+Then, you can run an interactive session with
+
+```bash
+docker run --rm fluke_container fluke [ARGS]
+```
+
+where `ARGS` are the arguments you want to pass to the `fluke` command as described in the next section.
 
 ## Run a federated algorithm
 
@@ -32,8 +64,8 @@ To run an algorithm in ``fluke`` you need to create two configuration files:
 
 Then, you can run the following command:
 
-```console
-fluke --config=EXP_CONFIG federation ALG_CONFIG
+```bash
+fluke federation EXP_CONFIG ALG_CONFIG
 ```
 
 You can find some examples of these files in the [configs](https://github.com/makgyver/fluke/tree/main/configs) folder of the repository.
@@ -41,8 +73,8 @@ You can find some examples of these files in the [configs](https://github.com/ma
 ### Example
 Let say you want to run the classic `FedAvg` algorithm on the `MNIST` dataset. Then, using the configuration files [exp.yaml](https://github.com/makgyver/fluke/blob/main/configs/exp.yaml) and [fedavg.yaml](https://github.com/makgyver/fluke/blob/main/configs/fedavg.yaml), you can run the following command:
 
-```console
-fluke --config=path_to_folder/exp.yaml federation path_to_folder/fedavg.yaml
+```bash
+fluke federation path_to_folder/exp.yaml path_to_folder/fedavg.yaml
 ```
 
 where `path_to_folder` is the path to the folder containing the configuration files.
@@ -64,18 +96,37 @@ Tutorials on how to use ``fluke`` can be found [here](https://makgyver.github.io
 ](https://colab.research.google.com/github/makgyver/fluke/blob/main/tutorials/fluke_custom_nn.ipynb)
 - Add your dataset and use it with ``fluke`` [![Open in Colab](https://img.shields.io/badge/Open_in_Colab-blue?style=flat-square&logo=google-colab&logoColor=yellow&labelColor=gray)
 ](https://colab.research.google.com/github/makgyver/fluke/blob/main/tutorials/fluke_custom_dataset.ipynb)
-
-`fluke` has been presented at the WAFL workshop hosted in ECML PKDD 2024. These are the [slides](../assets/pdf/fluke_ecmlpkdd2024.pdf).
+- Add your custom evaluation metric in ``fluke`` [![Open in Colab](https://img.shields.io/badge/Open_in_Colab-blue?style=flat-square&logo=google-colab&logoColor=yellow&labelColor=gray)
+](https://colab.research.google.com/github/makgyver/fluke/blob/main/tutorials/fluke_custom_eval.ipynb)
 
 ## Contributing
 
 If you have suggestions for how ``fluke`` could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
 
-For more, check out the [Contributing Guide](https://github.com/makgyver/fluke/CONTRIBUTING.md).
+For more, check out the [Contributing Guide](CONTRIBUTING.md).
 
+## `fluke` @ ECML-PKDD 2024
 
-## Authors
+`fluke` has been presented at the [ECML-PKDD 2024](https://ecmlpkdd2024.org/) conference in the [Workshop on Advancements in Federated Learning](https://wafl2024.di.unito.it). The slides of the presentation are available [here](slides/fluke_ecmlpkdd2024.pdf).
 
-- [**Mirko Polato**](https://makgyver.github.io) - *Idealization*, *Design*, *Development*, *Testing*, and *Documentation*
-- [**Roberto Esposito**]() - *Testing*
-- [**Samuele Fonio**]() - *Testing*
+## Citing `fluke`
+``fluke`` is a research tool, and we kindly ask you to cite it in your research papers if you use it. You can use the following BibTeX entry:
+
+```bibtex
+@misc{polato2024fluke,
+      title={fluke: Federated Learning Utility frameworK for Experimentation and research},
+      author={Mirko Polato},
+      year={2024},
+      eprint={2412.15728},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2412.15728},
+}
+```
+
+## Authors and main contributors
+
+- [**Mirko Polato**](https://makgyver.github.io) - *Idealization*, *Design*, *Development*, *Testing*, *Tutorial*, and *Documentation*
+- [**Roberto Esposito**](https://github.com/boborbt) - *Testing*
+- [**Samuele Fonio**](https://github.com/samuelefonio) - *Testing*, *Tutorial*
+- [**Edoardo Oglietti**](https://github.com/00-uno-00) - *Testing*
